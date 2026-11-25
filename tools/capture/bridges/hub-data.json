@@ -1,0 +1,4139 @@
+{
+ "about": {
+  "apps": 9,
+  "manifest": true,
+  "repo": "Pangpond543/prism-hub",
+  "sandbox": false,
+  "tauri": "2.12.7",
+  "test": "",
+  "version": "1.0.0"
+ },
+ "state": {
+  "apps": [
+   {
+    "actions": [],
+    "data": [],
+    "dev": "",
+    "electron": "Prism Size",
+    "en": "See what takes up disk space and tidy files by dragging them",
+    "exe": "Prism Size.exe",
+    "guide": "size.html",
+    "install": {
+     "byHub": false,
+     "dir": "C:\\Program Files\\Prism Size",
+     "exe": "C:\\Program Files\\Prism Size\\Prism Size.exe",
+     "exists": true,
+     "kind": "setup",
+     "source": "setup",
+     "uninstall": "",
+     "version": "1.1.0"
+    },
+    "key": "size",
+    "kw": "พื้นที่ ดิสก์ ไดรฟ์ ไฟล์ ลบ สแกน เต็ม disk space storage drive scan files clean",
+    "models": [],
+    "name": "Prism Size",
+    "needs": [],
+    "others": [],
+    "portable": "exe",
+    "repo": "Pangpond543/prism-size",
+    "requires": [],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "",
+    "th": "ดูว่าอะไรกินพื้นที่ดิสก์ แล้วจัดไฟล์ด้วยการลากวาง"
+   },
+   {
+    "actions": [],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Glass camera studio: arrange cameras, screens, images and text, output as a virtual camera",
+    "exe": "prism-cam.exe",
+    "guide": "cam.html",
+    "install": {
+     "byHub": false,
+     "dir": "C:\\Program Files\\Prism Cam",
+     "exe": "C:\\Program Files\\Prism Cam\\prism-cam.exe",
+     "exists": true,
+     "kind": "setup",
+     "source": "setup",
+     "uninstall": "",
+     "version": "1.3.0"
+    },
+    "key": "cam",
+    "kw": "กล้อง เว็บแคม ไลฟ์ สตรีม ดิสคอร์ด ซูม camera webcam virtual stream discord zoom obs",
+    "models": [],
+    "name": "Prism Cam",
+    "needs": [
+     "webview2"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-cam",
+    "requires": [
+     "prism_vcam.dll"
+    ],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "com.prism.cam",
+    "th": "สตูดิโอกล้องแก้ว จัดกล้อง จอ รูป ข้อความ แล้วส่งออกเป็นกล้องเสมือน"
+   },
+   {
+    "actions": [
+     {
+      "en": "Open a video / music file in Prism Player",
+      "id": "open",
+      "pick": "media",
+      "th": "เปิดวิดีโอ / เพลงด้วย Prism Player"
+     }
+    ],
+    "data": [
+     "%APPDATA%\\Prism Media"
+    ],
+    "dev": "",
+    "electron": "",
+    "en": "Light, smooth player for any video or music file",
+    "exe": "prism-player.exe",
+    "guide": "media.html",
+    "install": {
+     "byHub": true,
+     "dir": "D:\\Apps\\Prism Player",
+     "exe": "D:\\Apps\\Prism Player\\prism-player.exe",
+     "exists": true,
+     "kind": "portable",
+     "source": "hub",
+     "uninstall": "",
+     "version": "1.0.0"
+    },
+    "key": "player",
+    "kw": "ดูหนัง วิดีโอ เพลง เล่น ซับ video movie music play subtitle mp4 mkv",
+    "models": [],
+    "name": "Prism Player",
+    "needs": [],
+    "others": [],
+    "portable": "zip",
+    "repo": "",
+    "requires": [
+     "runtime/ffmpeg.exe"
+    ],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "",
+    "th": "เล่นวิดีโอและเพลง ลื่น เบา ทุกไฟล์"
+   },
+   {
+    "actions": [
+     {
+      "en": "Open a video in Prism Studio",
+      "id": "open",
+      "pick": "media",
+      "th": "เปิดวิดีโอใน Prism Studio"
+     }
+    ],
+    "data": [
+     "%APPDATA%\\Prism Media"
+    ],
+    "dev": "",
+    "electron": "",
+    "en": "Edit videos, add subtitles, enhance with AI",
+    "exe": "prism-studio.exe",
+    "guide": "media.html",
+    "install": null,
+    "key": "studio",
+    "kw": "ตัดต่อ วิดีโอ ซับ แปลง edit video cut subtitle convert ai upscale",
+    "models": [],
+    "name": "Prism Studio",
+    "needs": [],
+    "others": [],
+    "portable": "zip",
+    "repo": "",
+    "requires": [
+     "runtime/ffmpeg.exe"
+    ],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "",
+    "th": "ตัดต่อวิดีโอ ใส่ซับ ปรับภาพด้วย AI"
+   },
+   {
+    "actions": [
+     {
+      "args": [
+       "--bar"
+      ],
+      "en": "Record the screen — floating bar only",
+      "id": "bar",
+      "kw": "อัด อัดจอ record capture",
+      "th": "อัดจอ — เปิดแถบลอยอย่างเดียว"
+     }
+    ],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Light GPU screen recorder with a floating glass bar and replay buffer",
+    "exe": "prism-rec.exe",
+    "guide": "rec.html",
+    "install": {
+     "byHub": true,
+     "dir": "D:\\Apps\\Prism Rec",
+     "exe": "D:\\Apps\\Prism Rec\\prism-rec.exe",
+     "exists": true,
+     "kind": "portable",
+     "source": "hub",
+     "uninstall": "",
+     "version": "1.0.0"
+    },
+    "key": "rec",
+    "kw": "อัด จอ หน้าจอ บันทึก คลิป เกม ย้อนหลัง record screen capture clip game replay",
+    "models": [],
+    "name": "Prism Rec",
+    "needs": [
+     "webview2"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-rec",
+    "requires": [
+     "runtime"
+    ],
+    "running": true,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": {
+     "args": "--bar",
+     "name": "Prism Rec"
+    },
+    "startupState": {
+     "on": true
+    },
+    "tauri": "com.prism.rec",
+    "th": "อัดหน้าจอเบาๆ ด้วยการ์ดจอ มีแถบลอยแก้ว และอัดย้อนหลัง"
+   },
+   {
+    "actions": [
+     {
+      "args": [
+       "--tray"
+      ],
+      "en": "Start voice control (in the background)",
+      "id": "tray",
+      "kw": "พูด เสียง voice",
+      "th": "เริ่มสั่งงานด้วยเสียง (อยู่เบื้องหลัง)"
+     }
+    ],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Say it to open apps, sites and commands — fully offline",
+    "exe": "prism-voiceopen.exe",
+    "guide": "voiceopen.html",
+    "install": {
+     "byHub": true,
+     "dir": "D:\\Apps\\Prism VoiceOpen",
+     "exe": "D:\\Apps\\Prism VoiceOpen\\prism-voiceopen.exe",
+     "exists": true,
+     "kind": "portable",
+     "source": "hub",
+     "uninstall": "",
+     "version": "1.1.0"
+    },
+    "key": "voiceopen",
+    "kw": "เสียง พูด สั่ง ไมค์ voice speak command mic whisper",
+    "models": [
+     "runtime/models"
+    ],
+    "name": "Prism VoiceOpen",
+    "needs": [
+     "webview2",
+     "vulkan"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-voiceopen",
+    "requires": [
+     "runtime"
+    ],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": {
+     "args": "--tray",
+     "name": "Prism VoiceOpen"
+    },
+    "startupState": {
+     "on": true
+    },
+    "tauri": "com.prism.voiceopen",
+    "th": "พูดสั่งเปิดโปรแกรม เว็บ และคำสั่ง ออฟไลน์ทั้งหมด"
+   },
+   {
+    "actions": [
+     {
+      "en": "Open a .py / .ipynb file in Prism Code",
+      "id": "open",
+      "pick": "py",
+      "th": "เปิดไฟล์ .py / .ipynb ด้วย Prism Code"
+     }
+    ],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Learn Python by watching it run, step by step",
+    "exe": "prism-code.exe",
+    "guide": "code.html",
+    "install": {
+     "byHub": false,
+     "dir": "C:\\Program Files\\Prism Code",
+     "exe": "C:\\Program Files\\Prism Code\\prism-code.exe",
+     "exists": true,
+     "kind": "setup",
+     "source": "setup",
+     "uninstall": "",
+     "version": "1.5.0"
+    },
+    "key": "code",
+    "kw": "โค้ด ไพทอน เขียนโปรแกรม เรียน สอบ code python learn exam programming",
+    "models": [],
+    "name": "Prism Code",
+    "needs": [
+     "webview2"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-code",
+    "requires": [],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "com.prism.code",
+    "th": "เรียน Python โดยดูโค้ดทำงานทีละขั้น"
+   },
+   {
+    "actions": [
+     {
+      "en": "Learn from a video file in Prism LLearn",
+      "id": "open",
+      "pick": "media",
+      "th": "เรียนจากไฟล์วิดีโอด้วย Prism LLearn"
+     }
+    ],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Learn English / Chinese from YouTube, websites and video files",
+    "exe": "prism-llearn.exe",
+    "guide": "",
+    "install": {
+     "byHub": true,
+     "dir": "D:\\Apps\\Prism LLearn",
+     "exe": "D:\\Apps\\Prism LLearn\\prism-llearn.exe",
+     "exists": true,
+     "kind": "portable",
+     "source": "hub",
+     "uninstall": "",
+     "version": "1.1.0"
+    },
+    "key": "llearn",
+    "kw": "ภาษา อังกฤษ จีน แปล คำศัพท์ เรียน ยูทูป language english chinese translate vocabulary youtube learn",
+    "models": [
+     "runtime/models"
+    ],
+    "name": "Prism LLearn",
+    "needs": [
+     "webview2",
+     "vulkan"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-llearn",
+    "requires": [
+     "runtime"
+    ],
+    "running": true,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "com.prism.llearn",
+    "th": "เรียนอังกฤษ / จีน จาก YouTube เว็บ และไฟล์วิดีโอ"
+   },
+   {
+    "actions": [],
+    "data": [],
+    "dev": "",
+    "electron": "",
+    "en": "Capture the screen, read the text in it and translate it",
+    "exe": "prism-shot.exe",
+    "guide": "",
+    "install": {
+     "byHub": true,
+     "dir": "D:\\Apps\\Prism Shot",
+     "exe": "D:\\Apps\\Prism Shot\\prism-shot.exe",
+     "exists": true,
+     "kind": "portable",
+     "source": "hub",
+     "uninstall": "",
+     "version": "1.0.0"
+    },
+    "key": "shot",
+    "kw": "แคป จับภาพ หน้าจอ รูป อ่าน ตัวหนังสือ แปล ภาพ screenshot capture screen ocr translate snip",
+    "models": [],
+    "name": "Prism Shot",
+    "needs": [
+     "webview2"
+    ],
+    "others": [],
+    "portable": "zip",
+    "repo": "Pangpond543/prism-shot",
+    "requires": [],
+    "running": false,
+    "runningPath": "",
+    "shortcut": null,
+    "startup": null,
+    "startupState": {
+     "on": false
+    },
+    "tauri": "com.prism.shot",
+    "th": "แคปหน้าจอ อ่านตัวหนังสือในภาพ แล้วแปลเป็นไทย"
+   }
+  ],
+  "busy": [],
+  "guideBase": "https://pangpond543.github.io/prism/",
+  "hotkeyOk": true,
+  "hubStartup": {
+   "on": true
+  },
+  "suite": null
+ },
+ "settings": {
+  "checkHours": 6,
+  "closeToTray": true,
+  "hotkey": "Ctrl+Alt+Space",
+  "manual": {},
+  "notified": {},
+  "notify": true,
+  "showDev": false,
+  "trackUsage": true,
+  "trayHinted": true
+ },
+ "usage": {
+  "data": {
+   "days": {
+    "2026-11-25": {
+     "cam": {
+      "r": 2327,
+      "a": 1483,
+      "n": 2
+     },
+     "shot": {
+      "r": 215,
+      "a": 166,
+      "n": 4
+     }
+    },
+    "2026-11-24": {
+     "code": {
+      "r": 2503,
+      "a": 1278,
+      "n": 4
+     },
+     "cam": {
+      "r": 739,
+      "a": 463,
+      "n": 4
+     },
+     "size": {
+      "r": 142,
+      "a": 62,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 996,
+      "a": 491,
+      "n": 1
+     }
+    },
+    "2026-11-23": {
+     "llearn": {
+      "r": 5279,
+      "a": 3200,
+      "n": 1
+     },
+     "rec": {
+      "r": 659,
+      "a": 482,
+      "n": 3
+     },
+     "cam": {
+      "r": 1557,
+      "a": 839,
+      "n": 2
+     },
+     "shot": {
+      "r": 688,
+      "a": 429,
+      "n": 2
+     },
+     "size": {
+      "r": 231,
+      "a": 104,
+      "n": 4
+     }
+    },
+    "2026-11-22": {
+     "llearn": {
+      "r": 2452,
+      "a": 1696,
+      "n": 3
+     },
+     "code": {
+      "r": 1704,
+      "a": 1284,
+      "n": 1
+     },
+     "cam": {
+      "r": 2019,
+      "a": 1519,
+      "n": 4
+     },
+     "player": {
+      "r": 1934,
+      "a": 788,
+      "n": 1
+     },
+     "shot": {
+      "r": 435,
+      "a": 264,
+      "n": 3
+     }
+    },
+    "2026-11-21": {
+     "llearn": {
+      "r": 5041,
+      "a": 2133,
+      "n": 1
+     },
+     "cam": {
+      "r": 2328,
+      "a": 1278,
+      "n": 3
+     },
+     "player": {
+      "r": 1928,
+      "a": 1104,
+      "n": 3
+     },
+     "shot": {
+      "r": 677,
+      "a": 483,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1875,
+      "a": 1462,
+      "n": 4
+     }
+    },
+    "2026-11-20": {
+     "llearn": {
+      "r": 5156,
+      "a": 2646,
+      "n": 3
+     },
+     "code": {
+      "r": 1255,
+      "a": 810,
+      "n": 1
+     },
+     "cam": {
+      "r": 1485,
+      "a": 660,
+      "n": 2
+     },
+     "shot": {
+      "r": 1099,
+      "a": 691,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1610,
+      "a": 1285,
+      "n": 4
+     }
+    },
+    "2026-11-19": {
+     "rec": {
+      "r": 863,
+      "a": 513,
+      "n": 2
+     },
+     "code": {
+      "r": 614,
+      "a": 348,
+      "n": 3
+     },
+     "player": {
+      "r": 1297,
+      "a": 928,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1332,
+      "a": 862,
+      "n": 2
+     }
+    },
+    "2026-11-18": {
+     "llearn": {
+      "r": 2836,
+      "a": 1661,
+      "n": 1
+     },
+     "rec": {
+      "r": 1973,
+      "a": 1497,
+      "n": 4
+     },
+     "code": {
+      "r": 978,
+      "a": 410,
+      "n": 3
+     },
+     "player": {
+      "r": 1222,
+      "a": 854,
+      "n": 2
+     },
+     "shot": {
+      "r": 628,
+      "a": 459,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1461,
+      "a": 1006,
+      "n": 4
+     }
+    },
+    "2026-11-17": {
+     "llearn": {
+      "r": 708,
+      "a": 379,
+      "n": 1
+     },
+     "rec": {
+      "r": 1510,
+      "a": 816,
+      "n": 2
+     },
+     "cam": {
+      "r": 1439,
+      "a": 861,
+      "n": 1
+     },
+     "player": {
+      "r": 884,
+      "a": 493,
+      "n": 1
+     },
+     "shot": {
+      "r": 508,
+      "a": 238,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1600,
+      "a": 1148,
+      "n": 4
+     }
+    },
+    "2026-11-16": {
+     "llearn": {
+      "r": 4836,
+      "a": 3787,
+      "n": 2
+     },
+     "rec": {
+      "r": 452,
+      "a": 243,
+      "n": 4
+     },
+     "cam": {
+      "r": 1643,
+      "a": 695,
+      "n": 4
+     },
+     "player": {
+      "r": 3174,
+      "a": 2096,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1571,
+      "a": 925,
+      "n": 1
+     }
+    },
+    "2026-11-15": {
+     "llearn": {
+      "r": 4816,
+      "a": 3106,
+      "n": 3
+     },
+     "rec": {
+      "r": 1037,
+      "a": 691,
+      "n": 3
+     },
+     "cam": {
+      "r": 587,
+      "a": 425,
+      "n": 3
+     },
+     "size": {
+      "r": 169,
+      "a": 92,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 556,
+      "a": 269,
+      "n": 4
+     }
+    },
+    "2026-11-14": {
+     "llearn": {
+      "r": 3179,
+      "a": 1568,
+      "n": 4
+     },
+     "rec": {
+      "r": 429,
+      "a": 308,
+      "n": 3
+     },
+     "cam": {
+      "r": 2490,
+      "a": 1331,
+      "n": 2
+     },
+     "player": {
+      "r": 2406,
+      "a": 1906,
+      "n": 2
+     },
+     "shot": {
+      "r": 345,
+      "a": 207,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1012,
+      "a": 500,
+      "n": 2
+     }
+    },
+    "2026-11-13": {
+     "rec": {
+      "r": 1150,
+      "a": 664,
+      "n": 2
+     },
+     "code": {
+      "r": 1269,
+      "a": 751,
+      "n": 1
+     },
+     "cam": {
+      "r": 1445,
+      "a": 1150,
+      "n": 2
+     },
+     "shot": {
+      "r": 661,
+      "a": 326,
+      "n": 4
+     },
+     "size": {
+      "r": 308,
+      "a": 232,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1366,
+      "a": 832,
+      "n": 3
+     }
+    },
+    "2026-11-12": {
+     "rec": {
+      "r": 757,
+      "a": 442,
+      "n": 4
+     },
+     "cam": {
+      "r": 1860,
+      "a": 1413,
+      "n": 1
+     },
+     "player": {
+      "r": 3176,
+      "a": 1924,
+      "n": 1
+     },
+     "shot": {
+      "r": 465,
+      "a": 342,
+      "n": 4
+     },
+     "size": {
+      "r": 398,
+      "a": 307,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 723,
+      "a": 462,
+      "n": 2
+     }
+    },
+    "2026-11-11": {
+     "llearn": {
+      "r": 3059,
+      "a": 1464,
+      "n": 3
+     },
+     "rec": {
+      "r": 1051,
+      "a": 783,
+      "n": 2
+     },
+     "size": {
+      "r": 224,
+      "a": 151,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1397,
+      "a": 659,
+      "n": 1
+     }
+    },
+    "2026-11-10": {
+     "llearn": {
+      "r": 2417,
+      "a": 978,
+      "n": 3
+     },
+     "rec": {
+      "r": 984,
+      "a": 489,
+      "n": 4
+     },
+     "code": {
+      "r": 1905,
+      "a": 1089,
+      "n": 3
+     },
+     "cam": {
+      "r": 2285,
+      "a": 1164,
+      "n": 2
+     },
+     "player": {
+      "r": 3236,
+      "a": 2356,
+      "n": 3
+     },
+     "shot": {
+      "r": 1123,
+      "a": 853,
+      "n": 2
+     },
+     "size": {
+      "r": 420,
+      "a": 248,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1291,
+      "a": 994,
+      "n": 4
+     }
+    },
+    "2026-11-09": {
+     "rec": {
+      "r": 864,
+      "a": 661,
+      "n": 2
+     },
+     "code": {
+      "r": 1069,
+      "a": 735,
+      "n": 3
+     },
+     "cam": {
+      "r": 2642,
+      "a": 1926,
+      "n": 1
+     },
+     "size": {
+      "r": 347,
+      "a": 162,
+      "n": 3
+     }
+    },
+    "2026-11-08": {
+     "llearn": {
+      "r": 4493,
+      "a": 3559,
+      "n": 2
+     },
+     "rec": {
+      "r": 1134,
+      "a": 624,
+      "n": 1
+     },
+     "code": {
+      "r": 699,
+      "a": 378,
+      "n": 3
+     },
+     "cam": {
+      "r": 2242,
+      "a": 913,
+      "n": 1
+     },
+     "player": {
+      "r": 2290,
+      "a": 1771,
+      "n": 3
+     },
+     "shot": {
+      "r": 225,
+      "a": 172,
+      "n": 3
+     },
+     "size": {
+      "r": 532,
+      "a": 369,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1688,
+      "a": 1122,
+      "n": 2
+     }
+    },
+    "2026-11-07": {
+     "cam": {
+      "r": 360,
+      "a": 260,
+      "n": 2
+     },
+     "player": {
+      "r": 566,
+      "a": 231,
+      "n": 1
+     },
+     "shot": {
+      "r": 1083,
+      "a": 743,
+      "n": 3
+     },
+     "size": {
+      "r": 73,
+      "a": 55,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1029,
+      "a": 510,
+      "n": 1
+     }
+    },
+    "2026-11-06": {
+     "llearn": {
+      "r": 2207,
+      "a": 1682,
+      "n": 3
+     },
+     "rec": {
+      "r": 418,
+      "a": 310,
+      "n": 3
+     },
+     "cam": {
+      "r": 2714,
+      "a": 1807,
+      "n": 4
+     },
+     "player": {
+      "r": 1302,
+      "a": 653,
+      "n": 1
+     },
+     "shot": {
+      "r": 547,
+      "a": 397,
+      "n": 2
+     },
+     "size": {
+      "r": 384,
+      "a": 284,
+      "n": 3
+     }
+    },
+    "2026-11-05": {
+     "rec": {
+      "r": 607,
+      "a": 354,
+      "n": 3
+     },
+     "code": {
+      "r": 3140,
+      "a": 1917,
+      "n": 4
+     },
+     "size": {
+      "r": 271,
+      "a": 141,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1793,
+      "a": 1051,
+      "n": 4
+     }
+    },
+    "2026-11-04": {
+     "llearn": {
+      "r": 1027,
+      "a": 768,
+      "n": 2
+     },
+     "rec": {
+      "r": 937,
+      "a": 553,
+      "n": 3
+     },
+     "code": {
+      "r": 514,
+      "a": 336,
+      "n": 2
+     },
+     "cam": {
+      "r": 1769,
+      "a": 866,
+      "n": 2
+     },
+     "player": {
+      "r": 2977,
+      "a": 1905,
+      "n": 4
+     },
+     "shot": {
+      "r": 145,
+      "a": 78,
+      "n": 4
+     },
+     "size": {
+      "r": 521,
+      "a": 366,
+      "n": 4
+     }
+    },
+    "2026-11-03": {
+     "llearn": {
+      "r": 4978,
+      "a": 2032,
+      "n": 3
+     },
+     "size": {
+      "r": 513,
+      "a": 209,
+      "n": 4
+     }
+    },
+    "2026-11-02": {
+     "llearn": {
+      "r": 4633,
+      "a": 2297,
+      "n": 4
+     },
+     "rec": {
+      "r": 1907,
+      "a": 1194,
+      "n": 1
+     },
+     "player": {
+      "r": 2555,
+      "a": 1979,
+      "n": 4
+     },
+     "shot": {
+      "r": 400,
+      "a": 301,
+      "n": 1
+     },
+     "size": {
+      "r": 520,
+      "a": 380,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1057,
+      "a": 725,
+      "n": 4
+     }
+    },
+    "2026-11-01": {
+     "llearn": {
+      "r": 767,
+      "a": 423,
+      "n": 3
+     },
+     "rec": {
+      "r": 1488,
+      "a": 708,
+      "n": 1
+     },
+     "code": {
+      "r": 2885,
+      "a": 1551,
+      "n": 2
+     },
+     "cam": {
+      "r": 2865,
+      "a": 1691,
+      "n": 4
+     },
+     "player": {
+      "r": 2772,
+      "a": 1280,
+      "n": 4
+     },
+     "shot": {
+      "r": 190,
+      "a": 103,
+      "n": 4
+     },
+     "size": {
+      "r": 221,
+      "a": 102,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1565,
+      "a": 738,
+      "n": 1
+     }
+    },
+    "2026-10-31": {
+     "llearn": {
+      "r": 2276,
+      "a": 1491,
+      "n": 1
+     },
+     "rec": {
+      "r": 2375,
+      "a": 1371,
+      "n": 3
+     },
+     "code": {
+      "r": 1808,
+      "a": 1138,
+      "n": 1
+     },
+     "player": {
+      "r": 708,
+      "a": 516,
+      "n": 3
+     },
+     "shot": {
+      "r": 1074,
+      "a": 829,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1708,
+      "a": 1140,
+      "n": 4
+     }
+    },
+    "2026-10-30": {
+     "llearn": {
+      "r": 2365,
+      "a": 1381,
+      "n": 2
+     },
+     "cam": {
+      "r": 1040,
+      "a": 438,
+      "n": 1
+     },
+     "player": {
+      "r": 634,
+      "a": 395,
+      "n": 2
+     },
+     "size": {
+      "r": 473,
+      "a": 195,
+      "n": 2
+     }
+    },
+    "2026-10-29": {
+     "llearn": {
+      "r": 4526,
+      "a": 2546,
+      "n": 4
+     },
+     "rec": {
+      "r": 2343,
+      "a": 1786,
+      "n": 3
+     },
+     "shot": {
+      "r": 1142,
+      "a": 639,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1269,
+      "a": 803,
+      "n": 4
+     }
+    },
+    "2026-10-28": {
+     "llearn": {
+      "r": 4851,
+      "a": 3829,
+      "n": 1
+     },
+     "cam": {
+      "r": 1334,
+      "a": 618,
+      "n": 4
+     },
+     "player": {
+      "r": 3249,
+      "a": 1337,
+      "n": 3
+     },
+     "shot": {
+      "r": 529,
+      "a": 381,
+      "n": 3
+     },
+     "size": {
+      "r": 87,
+      "a": 35,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1576,
+      "a": 828,
+      "n": 1
+     }
+    },
+    "2026-10-27": {
+     "llearn": {
+      "r": 2649,
+      "a": 1677,
+      "n": 1
+     },
+     "size": {
+      "r": 121,
+      "a": 68,
+      "n": 4
+     }
+    },
+    "2026-10-26": {
+     "llearn": {
+      "r": 945,
+      "a": 639,
+      "n": 2
+     },
+     "rec": {
+      "r": 1144,
+      "a": 554,
+      "n": 3
+     },
+     "cam": {
+      "r": 1181,
+      "a": 843,
+      "n": 2
+     },
+     "shot": {
+      "r": 1099,
+      "a": 629,
+      "n": 1
+     },
+     "size": {
+      "r": 444,
+      "a": 302,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 804,
+      "a": 614,
+      "n": 2
+     }
+    },
+    "2026-10-25": {
+     "llearn": {
+      "r": 910,
+      "a": 579,
+      "n": 1
+     },
+     "rec": {
+      "r": 336,
+      "a": 216,
+      "n": 1
+     },
+     "code": {
+      "r": 1851,
+      "a": 1000,
+      "n": 4
+     },
+     "cam": {
+      "r": 1275,
+      "a": 742,
+      "n": 1
+     },
+     "player": {
+      "r": 2434,
+      "a": 1461,
+      "n": 4
+     },
+     "shot": {
+      "r": 288,
+      "a": 229,
+      "n": 2
+     },
+     "size": {
+      "r": 528,
+      "a": 382,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 562,
+      "a": 395,
+      "n": 4
+     }
+    },
+    "2026-10-24": {
+     "llearn": {
+      "r": 4693,
+      "a": 2187,
+      "n": 4
+     },
+     "rec": {
+      "r": 1707,
+      "a": 1012,
+      "n": 4
+     },
+     "code": {
+      "r": 3118,
+      "a": 1850,
+      "n": 4
+     },
+     "size": {
+      "r": 290,
+      "a": 141,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1811,
+      "a": 787,
+      "n": 4
+     }
+    },
+    "2026-10-23": {
+     "rec": {
+      "r": 1531,
+      "a": 1156,
+      "n": 4
+     },
+     "size": {
+      "r": 213,
+      "a": 112,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1629,
+      "a": 678,
+      "n": 2
+     }
+    },
+    "2026-10-22": {
+     "rec": {
+      "r": 1552,
+      "a": 1213,
+      "n": 2
+     },
+     "cam": {
+      "r": 630,
+      "a": 374,
+      "n": 3
+     },
+     "shot": {
+      "r": 547,
+      "a": 434,
+      "n": 2
+     }
+    },
+    "2026-10-21": {
+     "llearn": {
+      "r": 4635,
+      "a": 3376,
+      "n": 3
+     },
+     "rec": {
+      "r": 1897,
+      "a": 1043,
+      "n": 4
+     },
+     "shot": {
+      "r": 1125,
+      "a": 813,
+      "n": 3
+     },
+     "size": {
+      "r": 217,
+      "a": 92,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1459,
+      "a": 943,
+      "n": 2
+     }
+    },
+    "2026-10-20": {
+     "llearn": {
+      "r": 3490,
+      "a": 2418,
+      "n": 2
+     },
+     "rec": {
+      "r": 912,
+      "a": 689,
+      "n": 1
+     },
+     "code": {
+      "r": 1911,
+      "a": 972,
+      "n": 3
+     },
+     "cam": {
+      "r": 2154,
+      "a": 1462,
+      "n": 3
+     },
+     "player": {
+      "r": 3034,
+      "a": 2267,
+      "n": 3
+     },
+     "size": {
+      "r": 327,
+      "a": 166,
+      "n": 1
+     }
+    },
+    "2026-10-19": {
+     "rec": {
+      "r": 471,
+      "a": 344,
+      "n": 4
+     },
+     "code": {
+      "r": 3502,
+      "a": 1948,
+      "n": 2
+     },
+     "player": {
+      "r": 2185,
+      "a": 1714,
+      "n": 4
+     }
+    },
+    "2026-10-18": {
+     "llearn": {
+      "r": 4748,
+      "a": 3516,
+      "n": 4
+     },
+     "cam": {
+      "r": 498,
+      "a": 377,
+      "n": 2
+     },
+     "player": {
+      "r": 852,
+      "a": 535,
+      "n": 4
+     },
+     "shot": {
+      "r": 870,
+      "a": 371,
+      "n": 2
+     },
+     "size": {
+      "r": 318,
+      "a": 164,
+      "n": 4
+     }
+    },
+    "2026-10-17": {
+     "rec": {
+      "r": 1606,
+      "a": 954,
+      "n": 3
+     },
+     "code": {
+      "r": 3616,
+      "a": 2428,
+      "n": 2
+     },
+     "shot": {
+      "r": 713,
+      "a": 453,
+      "n": 4
+     },
+     "size": {
+      "r": 275,
+      "a": 132,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1428,
+      "a": 993,
+      "n": 2
+     }
+    },
+    "2026-10-16": {
+     "rec": {
+      "r": 2254,
+      "a": 913,
+      "n": 3
+     },
+     "code": {
+      "r": 3451,
+      "a": 2687,
+      "n": 1
+     },
+     "cam": {
+      "r": 2213,
+      "a": 1744,
+      "n": 1
+     },
+     "player": {
+      "r": 2176,
+      "a": 1702,
+      "n": 3
+     },
+     "size": {
+      "r": 370,
+      "a": 194,
+      "n": 3
+     }
+    },
+    "2026-10-15": {
+     "code": {
+      "r": 2354,
+      "a": 1482,
+      "n": 3
+     },
+     "cam": {
+      "r": 2126,
+      "a": 1244,
+      "n": 2
+     },
+     "player": {
+      "r": 674,
+      "a": 395,
+      "n": 4
+     },
+     "size": {
+      "r": 119,
+      "a": 87,
+      "n": 4
+     }
+    },
+    "2026-10-14": {
+     "llearn": {
+      "r": 5193,
+      "a": 2690,
+      "n": 2
+     },
+     "cam": {
+      "r": 456,
+      "a": 309,
+      "n": 2
+     },
+     "player": {
+      "r": 436,
+      "a": 185,
+      "n": 2
+     }
+    },
+    "2026-10-13": {
+     "rec": {
+      "r": 546,
+      "a": 353,
+      "n": 4
+     },
+     "cam": {
+      "r": 867,
+      "a": 527,
+      "n": 3
+     },
+     "size": {
+      "r": 183,
+      "a": 146,
+      "n": 3
+     }
+    },
+    "2026-10-12": {
+     "player": {
+      "r": 2417,
+      "a": 1815,
+      "n": 1
+     },
+     "size": {
+      "r": 346,
+      "a": 151,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 348,
+      "a": 276,
+      "n": 1
+     }
+    },
+    "2026-10-11": {
+     "rec": {
+      "r": 1432,
+      "a": 700,
+      "n": 1
+     },
+     "cam": {
+      "r": 2713,
+      "a": 1113,
+      "n": 2
+     },
+     "player": {
+      "r": 1956,
+      "a": 1045,
+      "n": 3
+     },
+     "shot": {
+      "r": 336,
+      "a": 144,
+      "n": 4
+     },
+     "size": {
+      "r": 362,
+      "a": 219,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1481,
+      "a": 953,
+      "n": 1
+     }
+    },
+    "2026-10-10": {
+     "rec": {
+      "r": 1843,
+      "a": 1264,
+      "n": 2
+     },
+     "code": {
+      "r": 3598,
+      "a": 2173,
+      "n": 1
+     },
+     "cam": {
+      "r": 1339,
+      "a": 925,
+      "n": 2
+     },
+     "player": {
+      "r": 2732,
+      "a": 1563,
+      "n": 4
+     },
+     "size": {
+      "r": 272,
+      "a": 172,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 473,
+      "a": 300,
+      "n": 4
+     }
+    },
+    "2026-10-09": {
+     "rec": {
+      "r": 1224,
+      "a": 536,
+      "n": 4
+     },
+     "code": {
+      "r": 1231,
+      "a": 583,
+      "n": 3
+     },
+     "player": {
+      "r": 2999,
+      "a": 2335,
+      "n": 3
+     },
+     "size": {
+      "r": 230,
+      "a": 109,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 569,
+      "a": 440,
+      "n": 2
+     }
+    },
+    "2026-10-08": {
+     "llearn": {
+      "r": 759,
+      "a": 401,
+      "n": 4
+     },
+     "code": {
+      "r": 3643,
+      "a": 2338,
+      "n": 4
+     },
+     "player": {
+      "r": 1285,
+      "a": 824,
+      "n": 3
+     },
+     "shot": {
+      "r": 846,
+      "a": 349,
+      "n": 1
+     },
+     "size": {
+      "r": 369,
+      "a": 190,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 406,
+      "a": 216,
+      "n": 4
+     }
+    },
+    "2026-10-07": {
+     "rec": {
+      "r": 1381,
+      "a": 763,
+      "n": 3
+     },
+     "cam": {
+      "r": 481,
+      "a": 266,
+      "n": 1
+     },
+     "size": {
+      "r": 133,
+      "a": 92,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1833,
+      "a": 1262,
+      "n": 2
+     }
+    },
+    "2026-10-06": {
+     "rec": {
+      "r": 1605,
+      "a": 1249,
+      "n": 3
+     },
+     "code": {
+      "r": 3713,
+      "a": 2799,
+      "n": 2
+     },
+     "cam": {
+      "r": 1430,
+      "a": 1040,
+      "n": 1
+     },
+     "player": {
+      "r": 2297,
+      "a": 1027,
+      "n": 1
+     },
+     "shot": {
+      "r": 672,
+      "a": 497,
+      "n": 2
+     },
+     "size": {
+      "r": 381,
+      "a": 202,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1053,
+      "a": 817,
+      "n": 1
+     }
+    },
+    "2026-10-05": {
+     "llearn": {
+      "r": 2730,
+      "a": 1226,
+      "n": 1
+     },
+     "player": {
+      "r": 2544,
+      "a": 1603,
+      "n": 1
+     },
+     "shot": {
+      "r": 293,
+      "a": 147,
+      "n": 3
+     },
+     "size": {
+      "r": 301,
+      "a": 181,
+      "n": 3
+     }
+    },
+    "2026-10-04": {
+     "llearn": {
+      "r": 4849,
+      "a": 3760,
+      "n": 1
+     },
+     "rec": {
+      "r": 1616,
+      "a": 1248,
+      "n": 4
+     },
+     "code": {
+      "r": 926,
+      "a": 675,
+      "n": 4
+     },
+     "cam": {
+      "r": 2093,
+      "a": 1542,
+      "n": 2
+     },
+     "player": {
+      "r": 1283,
+      "a": 828,
+      "n": 1
+     },
+     "shot": {
+      "r": 503,
+      "a": 250,
+      "n": 2
+     },
+     "size": {
+      "r": 555,
+      "a": 256,
+      "n": 4
+     }
+    },
+    "2026-10-03": {
+     "llearn": {
+      "r": 2533,
+      "a": 1305,
+      "n": 2
+     },
+     "code": {
+      "r": 2091,
+      "a": 1535,
+      "n": 3
+     },
+     "shot": {
+      "r": 757,
+      "a": 567,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 689,
+      "a": 392,
+      "n": 2
+     }
+    },
+    "2026-10-02": {
+     "rec": {
+      "r": 1709,
+      "a": 886,
+      "n": 3
+     },
+     "code": {
+      "r": 1622,
+      "a": 1005,
+      "n": 3
+     },
+     "cam": {
+      "r": 2816,
+      "a": 1132,
+      "n": 1
+     },
+     "player": {
+      "r": 985,
+      "a": 577,
+      "n": 4
+     },
+     "size": {
+      "r": 179,
+      "a": 82,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 888,
+      "a": 412,
+      "n": 4
+     }
+    },
+    "2026-10-01": {
+     "llearn": {
+      "r": 4300,
+      "a": 2776,
+      "n": 1
+     },
+     "rec": {
+      "r": 1624,
+      "a": 932,
+      "n": 2
+     },
+     "code": {
+      "r": 1720,
+      "a": 790,
+      "n": 1
+     },
+     "cam": {
+      "r": 1941,
+      "a": 784,
+      "n": 4
+     },
+     "player": {
+      "r": 1185,
+      "a": 846,
+      "n": 1
+     },
+     "size": {
+      "r": 481,
+      "a": 322,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 656,
+      "a": 382,
+      "n": 4
+     }
+    },
+    "2026-09-30": {
+     "rec": {
+      "r": 810,
+      "a": 555,
+      "n": 4
+     },
+     "code": {
+      "r": 2969,
+      "a": 1572,
+      "n": 2
+     },
+     "player": {
+      "r": 3183,
+      "a": 1395,
+      "n": 2
+     },
+     "shot": {
+      "r": 199,
+      "a": 124,
+      "n": 3
+     },
+     "size": {
+      "r": 270,
+      "a": 140,
+      "n": 4
+     }
+    },
+    "2026-09-29": {
+     "llearn": {
+      "r": 2851,
+      "a": 1965,
+      "n": 2
+     },
+     "rec": {
+      "r": 1647,
+      "a": 1276,
+      "n": 1
+     },
+     "code": {
+      "r": 3410,
+      "a": 2314,
+      "n": 1
+     },
+     "cam": {
+      "r": 2481,
+      "a": 1590,
+      "n": 1
+     },
+     "shot": {
+      "r": 938,
+      "a": 400,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 683,
+      "a": 532,
+      "n": 4
+     }
+    },
+    "2026-09-28": {
+     "llearn": {
+      "r": 4592,
+      "a": 2809,
+      "n": 3
+     },
+     "rec": {
+      "r": 950,
+      "a": 439,
+      "n": 4
+     },
+     "cam": {
+      "r": 1326,
+      "a": 1005,
+      "n": 4
+     },
+     "player": {
+      "r": 1458,
+      "a": 1151,
+      "n": 4
+     }
+    },
+    "2026-09-27": {
+     "llearn": {
+      "r": 3600,
+      "a": 1841,
+      "n": 2
+     },
+     "rec": {
+      "r": 1243,
+      "a": 584,
+      "n": 1
+     },
+     "code": {
+      "r": 3291,
+      "a": 2480,
+      "n": 2
+     },
+     "cam": {
+      "r": 2835,
+      "a": 1186,
+      "n": 4
+     },
+     "shot": {
+      "r": 907,
+      "a": 371,
+      "n": 1
+     },
+     "size": {
+      "r": 400,
+      "a": 189,
+      "n": 1
+     }
+    },
+    "2026-09-26": {
+     "shot": {
+      "r": 1047,
+      "a": 528,
+      "n": 1
+     }
+    },
+    "2026-09-25": {
+     "llearn": {
+      "r": 2636,
+      "a": 1426,
+      "n": 2
+     },
+     "player": {
+      "r": 3342,
+      "a": 2306,
+      "n": 1
+     }
+    },
+    "2026-09-24": {
+     "rec": {
+      "r": 1157,
+      "a": 624,
+      "n": 4
+     },
+     "player": {
+      "r": 2096,
+      "a": 1328,
+      "n": 1
+     },
+     "shot": {
+      "r": 613,
+      "a": 417,
+      "n": 3
+     },
+     "size": {
+      "r": 451,
+      "a": 204,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1065,
+      "a": 663,
+      "n": 4
+     }
+    },
+    "2026-09-23": {
+     "shot": {
+      "r": 894,
+      "a": 513,
+      "n": 2
+     }
+    },
+    "2026-09-22": {
+     "llearn": {
+      "r": 4001,
+      "a": 1672,
+      "n": 1
+     },
+     "rec": {
+      "r": 2270,
+      "a": 1602,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1064,
+      "a": 563,
+      "n": 2
+     }
+    },
+    "2026-09-21": {
+     "shot": {
+      "r": 202,
+      "a": 118,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1639,
+      "a": 725,
+      "n": 1
+     }
+    },
+    "2026-09-20": {
+     "rec": {
+      "r": 378,
+      "a": 242,
+      "n": 3
+     }
+    },
+    "2026-09-19": {
+     "rec": {
+      "r": 1722,
+      "a": 1304,
+      "n": 4
+     },
+     "cam": {
+      "r": 2312,
+      "a": 1393,
+      "n": 3
+     },
+     "player": {
+      "r": 2368,
+      "a": 1665,
+      "n": 3
+     },
+     "shot": {
+      "r": 587,
+      "a": 243,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1135,
+      "a": 548,
+      "n": 2
+     }
+    },
+    "2026-09-18": {
+     "llearn": {
+      "r": 1853,
+      "a": 883,
+      "n": 2
+     },
+     "player": {
+      "r": 865,
+      "a": 499,
+      "n": 3
+     }
+    },
+    "2026-09-17": {
+     "llearn": {
+      "r": 4558,
+      "a": 2363,
+      "n": 3
+     },
+     "cam": {
+      "r": 1321,
+      "a": 685,
+      "n": 4
+     },
+     "size": {
+      "r": 455,
+      "a": 255,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 404,
+      "a": 230,
+      "n": 1
+     }
+    },
+    "2026-09-16": {
+     "rec": {
+      "r": 1329,
+      "a": 575,
+      "n": 1
+     },
+     "code": {
+      "r": 3468,
+      "a": 1390,
+      "n": 2
+     },
+     "cam": {
+      "r": 702,
+      "a": 335,
+      "n": 1
+     },
+     "player": {
+      "r": 2880,
+      "a": 2041,
+      "n": 3
+     }
+    },
+    "2026-09-15": {
+     "cam": {
+      "r": 2713,
+      "a": 1555,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1199,
+      "a": 801,
+      "n": 4
+     }
+    },
+    "2026-09-14": {
+     "code": {
+      "r": 3626,
+      "a": 2171,
+      "n": 4
+     },
+     "size": {
+      "r": 474,
+      "a": 239,
+      "n": 3
+     }
+    },
+    "2026-09-13": {
+     "rec": {
+      "r": 1847,
+      "a": 1059,
+      "n": 4
+     },
+     "cam": {
+      "r": 2522,
+      "a": 1836,
+      "n": 1
+     },
+     "player": {
+      "r": 1235,
+      "a": 681,
+      "n": 2
+     },
+     "shot": {
+      "r": 655,
+      "a": 489,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 272,
+      "a": 133,
+      "n": 3
+     }
+    },
+    "2026-09-12": {
+     "llearn": {
+      "r": 662,
+      "a": 491,
+      "n": 4
+     },
+     "cam": {
+      "r": 1271,
+      "a": 813,
+      "n": 4
+     },
+     "shot": {
+      "r": 856,
+      "a": 660,
+      "n": 4
+     },
+     "size": {
+      "r": 79,
+      "a": 52,
+      "n": 3
+     }
+    },
+    "2026-09-11": {
+     "llearn": {
+      "r": 1090,
+      "a": 589,
+      "n": 1
+     }
+    },
+    "2026-09-10": {
+     "rec": {
+      "r": 1179,
+      "a": 833,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 274,
+      "a": 115,
+      "n": 4
+     }
+    },
+    "2026-09-09": {
+     "rec": {
+      "r": 356,
+      "a": 247,
+      "n": 1
+     }
+    },
+    "2026-09-08": {
+     "llearn": {
+      "r": 2777,
+      "a": 1627,
+      "n": 1
+     },
+     "rec": {
+      "r": 1350,
+      "a": 786,
+      "n": 1
+     },
+     "cam": {
+      "r": 599,
+      "a": 427,
+      "n": 1
+     },
+     "player": {
+      "r": 622,
+      "a": 399,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 855,
+      "a": 383,
+      "n": 3
+     }
+    },
+    "2026-09-07": {},
+    "2026-09-06": {
+     "llearn": {
+      "r": 5011,
+      "a": 3642,
+      "n": 4
+     },
+     "rec": {
+      "r": 1924,
+      "a": 1264,
+      "n": 3
+     },
+     "cam": {
+      "r": 509,
+      "a": 241,
+      "n": 4
+     },
+     "shot": {
+      "r": 860,
+      "a": 605,
+      "n": 2
+     }
+    },
+    "2026-09-05": {
+     "llearn": {
+      "r": 4425,
+      "a": 2637,
+      "n": 1
+     },
+     "rec": {
+      "r": 768,
+      "a": 547,
+      "n": 3
+     },
+     "cam": {
+      "r": 1655,
+      "a": 1110,
+      "n": 3
+     },
+     "player": {
+      "r": 2462,
+      "a": 1251,
+      "n": 3
+     }
+    },
+    "2026-09-04": {
+     "rec": {
+      "r": 1608,
+      "a": 978,
+      "n": 3
+     },
+     "code": {
+      "r": 2249,
+      "a": 1129,
+      "n": 4
+     },
+     "shot": {
+      "r": 189,
+      "a": 143,
+      "n": 1
+     }
+    },
+    "2026-09-03": {
+     "llearn": {
+      "r": 3311,
+      "a": 2055,
+      "n": 1
+     },
+     "cam": {
+      "r": 1748,
+      "a": 874,
+      "n": 2
+     },
+     "player": {
+      "r": 2511,
+      "a": 1099,
+      "n": 2
+     },
+     "size": {
+      "r": 263,
+      "a": 155,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1335,
+      "a": 982,
+      "n": 1
+     }
+    },
+    "2026-09-02": {
+     "llearn": {
+      "r": 3877,
+      "a": 2576,
+      "n": 3
+     },
+     "shot": {
+      "r": 913,
+      "a": 472,
+      "n": 3
+     }
+    },
+    "2026-09-01": {
+     "rec": {
+      "r": 1430,
+      "a": 969,
+      "n": 1
+     },
+     "code": {
+      "r": 1264,
+      "a": 691,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 754,
+      "a": 331,
+      "n": 1
+     }
+    },
+    "2026-08-31": {
+     "rec": {
+      "r": 1563,
+      "a": 985,
+      "n": 4
+     },
+     "cam": {
+      "r": 2389,
+      "a": 1744,
+      "n": 3
+     },
+     "player": {
+      "r": 2560,
+      "a": 1791,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1150,
+      "a": 713,
+      "n": 1
+     }
+    },
+    "2026-08-30": {
+     "rec": {
+      "r": 301,
+      "a": 165,
+      "n": 3
+     }
+    },
+    "2026-08-29": {
+     "cam": {
+      "r": 1638,
+      "a": 1255,
+      "n": 2
+     }
+    },
+    "2026-08-28": {
+     "llearn": {
+      "r": 3551,
+      "a": 2109,
+      "n": 4
+     },
+     "shot": {
+      "r": 224,
+      "a": 168,
+      "n": 1
+     }
+    },
+    "2026-08-27": {
+     "player": {
+      "r": 1898,
+      "a": 843,
+      "n": 2
+     },
+     "shot": {
+      "r": 597,
+      "a": 409,
+      "n": 1
+     }
+    },
+    "2026-08-26": {
+     "code": {
+      "r": 2531,
+      "a": 1467,
+      "n": 2
+     },
+     "player": {
+      "r": 1963,
+      "a": 943,
+      "n": 3
+     }
+    },
+    "2026-08-25": {
+     "rec": {
+      "r": 1469,
+      "a": 880,
+      "n": 4
+     },
+     "shot": {
+      "r": 1086,
+      "a": 474,
+      "n": 2
+     }
+    },
+    "2026-08-24": {
+     "rec": {
+      "r": 1844,
+      "a": 1116,
+      "n": 1
+     },
+     "player": {
+      "r": 800,
+      "a": 360,
+      "n": 2
+     }
+    },
+    "2026-08-23": {
+     "llearn": {
+      "r": 3916,
+      "a": 2915,
+      "n": 4
+     },
+     "rec": {
+      "r": 1278,
+      "a": 705,
+      "n": 2
+     },
+     "shot": {
+      "r": 1145,
+      "a": 489,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 646,
+      "a": 424,
+      "n": 1
+     }
+    },
+    "2026-08-22": {
+     "llearn": {
+      "r": 5006,
+      "a": 2088,
+      "n": 4
+     },
+     "code": {
+      "r": 3252,
+      "a": 1916,
+      "n": 3
+     },
+     "player": {
+      "r": 3341,
+      "a": 1470,
+      "n": 4
+     },
+     "shot": {
+      "r": 896,
+      "a": 687,
+      "n": 4
+     },
+     "size": {
+      "r": 335,
+      "a": 144,
+      "n": 2
+     }
+    },
+    "2026-08-21": {
+     "player": {
+      "r": 1278,
+      "a": 850,
+      "n": 1
+     }
+    },
+    "2026-08-20": {
+     "rec": {
+      "r": 1026,
+      "a": 582,
+      "n": 2
+     },
+     "size": {
+      "r": 385,
+      "a": 167,
+      "n": 3
+     }
+    },
+    "2026-08-19": {
+     "rec": {
+      "r": 753,
+      "a": 561,
+      "n": 1
+     },
+     "cam": {
+      "r": 1253,
+      "a": 961,
+      "n": 1
+     },
+     "shot": {
+      "r": 323,
+      "a": 256,
+      "n": 2
+     }
+    },
+    "2026-08-18": {
+     "llearn": {
+      "r": 3266,
+      "a": 1487,
+      "n": 1
+     },
+     "rec": {
+      "r": 1547,
+      "a": 1041,
+      "n": 4
+     },
+     "cam": {
+      "r": 1137,
+      "a": 513,
+      "n": 3
+     }
+    },
+    "2026-08-17": {
+     "code": {
+      "r": 3288,
+      "a": 1535,
+      "n": 1
+     },
+     "cam": {
+      "r": 1056,
+      "a": 686,
+      "n": 2
+     },
+     "shot": {
+      "r": 739,
+      "a": 494,
+      "n": 2
+     }
+    },
+    "2026-08-16": {
+     "llearn": {
+      "r": 3399,
+      "a": 1925,
+      "n": 3
+     },
+     "cam": {
+      "r": 2271,
+      "a": 1383,
+      "n": 2
+     },
+     "shot": {
+      "r": 677,
+      "a": 522,
+      "n": 1
+     }
+    },
+    "2026-08-15": {
+     "rec": {
+      "r": 722,
+      "a": 575,
+      "n": 3
+     },
+     "cam": {
+      "r": 2617,
+      "a": 1558,
+      "n": 4
+     },
+     "player": {
+      "r": 2309,
+      "a": 1734,
+      "n": 1
+     },
+     "shot": {
+      "r": 629,
+      "a": 278,
+      "n": 1
+     }
+    },
+    "2026-08-14": {
+     "llearn": {
+      "r": 1086,
+      "a": 637,
+      "n": 2
+     },
+     "code": {
+      "r": 3095,
+      "a": 1879,
+      "n": 2
+     },
+     "cam": {
+      "r": 2029,
+      "a": 1151,
+      "n": 3
+     },
+     "player": {
+      "r": 2460,
+      "a": 1946,
+      "n": 4
+     }
+    },
+    "2026-08-13": {
+     "llearn": {
+      "r": 839,
+      "a": 545,
+      "n": 2
+     },
+     "rec": {
+      "r": 799,
+      "a": 401,
+      "n": 3
+     },
+     "code": {
+      "r": 3340,
+      "a": 2170,
+      "n": 4
+     },
+     "shot": {
+      "r": 628,
+      "a": 466,
+      "n": 4
+     },
+     "size": {
+      "r": 106,
+      "a": 78,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 705,
+      "a": 531,
+      "n": 2
+     }
+    },
+    "2026-08-12": {
+     "code": {
+      "r": 1953,
+      "a": 863,
+      "n": 1
+     },
+     "size": {
+      "r": 172,
+      "a": 108,
+      "n": 2
+     }
+    },
+    "2026-08-11": {
+     "llearn": {
+      "r": 1350,
+      "a": 962,
+      "n": 2
+     },
+     "rec": {
+      "r": 2256,
+      "a": 1685,
+      "n": 4
+     },
+     "code": {
+      "r": 2763,
+      "a": 1466,
+      "n": 4
+     },
+     "player": {
+      "r": 454,
+      "a": 189,
+      "n": 1
+     },
+     "size": {
+      "r": 442,
+      "a": 340,
+      "n": 4
+     }
+    },
+    "2026-08-10": {
+     "code": {
+      "r": 3424,
+      "a": 1565,
+      "n": 2
+     },
+     "player": {
+      "r": 434,
+      "a": 341,
+      "n": 2
+     },
+     "size": {
+      "r": 285,
+      "a": 177,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 935,
+      "a": 453,
+      "n": 3
+     }
+    },
+    "2026-08-09": {
+     "llearn": {
+      "r": 5145,
+      "a": 3830,
+      "n": 3
+     },
+     "rec": {
+      "r": 519,
+      "a": 396,
+      "n": 2
+     },
+     "code": {
+      "r": 3815,
+      "a": 2139,
+      "n": 2
+     },
+     "size": {
+      "r": 462,
+      "a": 193,
+      "n": 2
+     }
+    },
+    "2026-08-08": {
+     "llearn": {
+      "r": 2577,
+      "a": 1900,
+      "n": 2
+     },
+     "rec": {
+      "r": 453,
+      "a": 270,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1009,
+      "a": 457,
+      "n": 3
+     }
+    },
+    "2026-08-07": {
+     "rec": {
+      "r": 1926,
+      "a": 1452,
+      "n": 1
+     },
+     "size": {
+      "r": 285,
+      "a": 207,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 1405,
+      "a": 815,
+      "n": 4
+     }
+    },
+    "2026-08-06": {
+     "cam": {
+      "r": 1749,
+      "a": 965,
+      "n": 4
+     },
+     "shot": {
+      "r": 670,
+      "a": 529,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 497,
+      "a": 324,
+      "n": 4
+     }
+    },
+    "2026-08-05": {
+     "rec": {
+      "r": 1964,
+      "a": 1039,
+      "n": 1
+     },
+     "code": {
+      "r": 2593,
+      "a": 1888,
+      "n": 2
+     },
+     "cam": {
+      "r": 873,
+      "a": 616,
+      "n": 4
+     }
+    },
+    "2026-08-04": {
+     "llearn": {
+      "r": 4381,
+      "a": 3010,
+      "n": 2
+     },
+     "rec": {
+      "r": 2123,
+      "a": 1094,
+      "n": 4
+     },
+     "code": {
+      "r": 1038,
+      "a": 455,
+      "n": 3
+     },
+     "cam": {
+      "r": 513,
+      "a": 386,
+      "n": 3
+     },
+     "size": {
+      "r": 439,
+      "a": 292,
+      "n": 2
+     }
+    },
+    "2026-08-03": {
+     "size": {
+      "r": 197,
+      "a": 117,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 892,
+      "a": 456,
+      "n": 2
+     }
+    },
+    "2026-08-02": {
+     "llearn": {
+      "r": 2455,
+      "a": 1839,
+      "n": 1
+     },
+     "rec": {
+      "r": 1314,
+      "a": 873,
+      "n": 4
+     },
+     "cam": {
+      "r": 2808,
+      "a": 2035,
+      "n": 3
+     },
+     "shot": {
+      "r": 1109,
+      "a": 773,
+      "n": 3
+     }
+    },
+    "2026-08-01": {
+     "code": {
+      "r": 933,
+      "a": 655,
+      "n": 2
+     },
+     "cam": {
+      "r": 1675,
+      "a": 1119,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1916,
+      "a": 1505,
+      "n": 2
+     }
+    },
+    "2026-07-31": {
+     "rec": {
+      "r": 445,
+      "a": 277,
+      "n": 1
+     },
+     "code": {
+      "r": 2536,
+      "a": 1515,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1391,
+      "a": 733,
+      "n": 1
+     }
+    },
+    "2026-07-30": {
+     "cam": {
+      "r": 389,
+      "a": 296,
+      "n": 4
+     }
+    },
+    "2026-07-29": {
+     "cam": {
+      "r": 2562,
+      "a": 1524,
+      "n": 3
+     },
+     "size": {
+      "r": 239,
+      "a": 173,
+      "n": 3
+     }
+    },
+    "2026-07-28": {
+     "llearn": {
+      "r": 3144,
+      "a": 1937,
+      "n": 3
+     },
+     "size": {
+      "r": 297,
+      "a": 145,
+      "n": 4
+     }
+    },
+    "2026-07-27": {
+     "llearn": {
+      "r": 2415,
+      "a": 1020,
+      "n": 1
+     },
+     "cam": {
+      "r": 942,
+      "a": 587,
+      "n": 3
+     },
+     "player": {
+      "r": 2840,
+      "a": 2177,
+      "n": 1
+     },
+     "size": {
+      "r": 380,
+      "a": 156,
+      "n": 4
+     }
+    },
+    "2026-07-26": {
+     "llearn": {
+      "r": 3662,
+      "a": 2358,
+      "n": 3
+     },
+     "shot": {
+      "r": 843,
+      "a": 338,
+      "n": 3
+     }
+    },
+    "2026-07-25": {
+     "cam": {
+      "r": 1298,
+      "a": 794,
+      "n": 3
+     },
+     "shot": {
+      "r": 358,
+      "a": 230,
+      "n": 3
+     }
+    },
+    "2026-07-24": {
+     "llearn": {
+      "r": 4878,
+      "a": 2888,
+      "n": 3
+     },
+     "rec": {
+      "r": 1819,
+      "a": 1108,
+      "n": 1
+     }
+    },
+    "2026-07-23": {
+     "rec": {
+      "r": 1914,
+      "a": 1361,
+      "n": 3
+     },
+     "shot": {
+      "r": 524,
+      "a": 306,
+      "n": 1
+     },
+     "size": {
+      "r": 505,
+      "a": 346,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 418,
+      "a": 238,
+      "n": 2
+     }
+    },
+    "2026-07-22": {
+     "code": {
+      "r": 3422,
+      "a": 1682,
+      "n": 2
+     },
+     "size": {
+      "r": 375,
+      "a": 227,
+      "n": 1
+     }
+    },
+    "2026-07-21": {
+     "code": {
+      "r": 2502,
+      "a": 1875,
+      "n": 2
+     },
+     "cam": {
+      "r": 2454,
+      "a": 1610,
+      "n": 3
+     }
+    },
+    "2026-07-20": {
+     "llearn": {
+      "r": 4102,
+      "a": 2577,
+      "n": 2
+     },
+     "rec": {
+      "r": 1501,
+      "a": 956,
+      "n": 2
+     },
+     "shot": {
+      "r": 1100,
+      "a": 682,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 826,
+      "a": 438,
+      "n": 4
+     }
+    },
+    "2026-07-19": {
+     "shot": {
+      "r": 655,
+      "a": 475,
+      "n": 4
+     },
+     "size": {
+      "r": 382,
+      "a": 228,
+      "n": 2
+     }
+    },
+    "2026-07-18": {
+     "code": {
+      "r": 3291,
+      "a": 2309,
+      "n": 4
+     },
+     "player": {
+      "r": 1304,
+      "a": 628,
+      "n": 4
+     },
+     "size": {
+      "r": 326,
+      "a": 140,
+      "n": 1
+     }
+    },
+    "2026-07-17": {},
+    "2026-07-16": {
+     "llearn": {
+      "r": 1124,
+      "a": 560,
+      "n": 2
+     },
+     "rec": {
+      "r": 1448,
+      "a": 580,
+      "n": 4
+     }
+    },
+    "2026-07-15": {
+     "code": {
+      "r": 1432,
+      "a": 908,
+      "n": 3
+     },
+     "player": {
+      "r": 848,
+      "a": 593,
+      "n": 2
+     }
+    },
+    "2026-07-14": {
+     "rec": {
+      "r": 1826,
+      "a": 1360,
+      "n": 3
+     },
+     "code": {
+      "r": 573,
+      "a": 328,
+      "n": 3
+     },
+     "cam": {
+      "r": 1170,
+      "a": 749,
+      "n": 1
+     },
+     "player": {
+      "r": 1098,
+      "a": 742,
+      "n": 3
+     }
+    },
+    "2026-07-13": {
+     "shot": {
+      "r": 769,
+      "a": 435,
+      "n": 2
+     }
+    },
+    "2026-07-12": {
+     "cam": {
+      "r": 1721,
+      "a": 1202,
+      "n": 1
+     },
+     "shot": {
+      "r": 1071,
+      "a": 744,
+      "n": 4
+     },
+     "size": {
+      "r": 109,
+      "a": 81,
+      "n": 4
+     }
+    },
+    "2026-07-11": {
+     "cam": {
+      "r": 480,
+      "a": 243,
+      "n": 2
+     },
+     "player": {
+      "r": 1649,
+      "a": 1125,
+      "n": 3
+     },
+     "voiceopen": {
+      "r": 320,
+      "a": 130,
+      "n": 4
+     }
+    },
+    "2026-07-10": {
+     "llearn": {
+      "r": 1900,
+      "a": 908,
+      "n": 3
+     },
+     "cam": {
+      "r": 1812,
+      "a": 855,
+      "n": 2
+     },
+     "voiceopen": {
+      "r": 1355,
+      "a": 710,
+      "n": 4
+     }
+    },
+    "2026-07-09": {
+     "rec": {
+      "r": 2112,
+      "a": 1234,
+      "n": 1
+     },
+     "code": {
+      "r": 558,
+      "a": 347,
+      "n": 4
+     },
+     "cam": {
+      "r": 2380,
+      "a": 1275,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1037,
+      "a": 655,
+      "n": 2
+     }
+    },
+    "2026-07-08": {
+     "rec": {
+      "r": 1734,
+      "a": 737,
+      "n": 2
+     },
+     "cam": {
+      "r": 1462,
+      "a": 1103,
+      "n": 1
+     }
+    },
+    "2026-07-07": {
+     "rec": {
+      "r": 1433,
+      "a": 610,
+      "n": 3
+     },
+     "cam": {
+      "r": 394,
+      "a": 182,
+      "n": 4
+     },
+     "voiceopen": {
+      "r": 1075,
+      "a": 834,
+      "n": 1
+     }
+    },
+    "2026-07-06": {
+     "rec": {
+      "r": 602,
+      "a": 281,
+      "n": 2
+     },
+     "code": {
+      "r": 1275,
+      "a": 691,
+      "n": 3
+     }
+    },
+    "2026-07-05": {},
+    "2026-07-04": {
+     "code": {
+      "r": 1053,
+      "a": 665,
+      "n": 3
+     },
+     "cam": {
+      "r": 2378,
+      "a": 1408,
+      "n": 4
+     },
+     "size": {
+      "r": 515,
+      "a": 338,
+      "n": 2
+     }
+    },
+    "2026-07-03": {
+     "rec": {
+      "r": 1326,
+      "a": 707,
+      "n": 1
+     },
+     "cam": {
+      "r": 2312,
+      "a": 1802,
+      "n": 4
+     },
+     "size": {
+      "r": 556,
+      "a": 234,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 1900,
+      "a": 1038,
+      "n": 3
+     }
+    },
+    "2026-07-02": {
+     "cam": {
+      "r": 1139,
+      "a": 869,
+      "n": 2
+     },
+     "player": {
+      "r": 1806,
+      "a": 788,
+      "n": 3
+     }
+    },
+    "2026-07-01": {
+     "player": {
+      "r": 1864,
+      "a": 1074,
+      "n": 4
+     },
+     "size": {
+      "r": 182,
+      "a": 105,
+      "n": 1
+     }
+    },
+    "2026-06-30": {
+     "code": {
+      "r": 3178,
+      "a": 1914,
+      "n": 3
+     },
+     "cam": {
+      "r": 895,
+      "a": 703,
+      "n": 2
+     },
+     "shot": {
+      "r": 162,
+      "a": 84,
+      "n": 1
+     },
+     "voiceopen": {
+      "r": 886,
+      "a": 544,
+      "n": 4
+     }
+    },
+    "2026-06-29": {
+     "rec": {
+      "r": 1355,
+      "a": 658,
+      "n": 1
+     },
+     "code": {
+      "r": 3787,
+      "a": 2701,
+      "n": 4
+     },
+     "player": {
+      "r": 3077,
+      "a": 2093,
+      "n": 3
+     },
+     "shot": {
+      "r": 1091,
+      "a": 468,
+      "n": 1
+     },
+     "size": {
+      "r": 155,
+      "a": 86,
+      "n": 1
+     }
+    }
+   }
+  },
+  "today": "2026-11-25"
+ },
+ "health": {
+  "bad": 0,
+  "items": [
+   {
+    "app": "",
+    "en": "WebView2 is installed — most Prism apps draw their window with it",
+    "fix": null,
+    "level": "ok",
+    "th": "มี WebView2 แล้ว — ใช้แสดงหน้าต่างของแอป Prism ส่วนใหญ่"
+   },
+   {
+    "app": "",
+    "en": "Graphics card supports Vulkan — speeds up AI in LLearn / VoiceOpen",
+    "fix": null,
+    "level": "ok",
+    "th": "การ์ดจอรองรับ Vulkan — ใช้เร่ง AI ใน LLearn / VoiceOpen"
+   },
+   {
+    "app": "",
+    "en": "Drive C:\\ has 182 GB free of 476 GB",
+    "fix": null,
+    "level": "ok",
+    "th": "ไดรฟ์ C:\\ ว่าง 182 GB จาก 476 GB"
+   },
+   {
+    "app": "size",
+    "en": "Prism Size: program files complete (v1.1.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Size: ไฟล์โปรแกรมครบ (v1.1.0)"
+   },
+   {
+    "app": "cam",
+    "en": "Prism Cam: program files complete (v1.3.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Cam: ไฟล์โปรแกรมครบ (v1.3.0)"
+   },
+   {
+    "app": "player",
+    "en": "Prism Player: program files complete (v1.0.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Player: ไฟล์โปรแกรมครบ (v1.0.0)"
+   },
+   {
+    "app": "rec",
+    "en": "Prism Rec: program files complete (v1.0.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Rec: ไฟล์โปรแกรมครบ (v1.0.0)"
+   },
+   {
+    "app": "voiceopen",
+    "en": "Prism VoiceOpen: program files complete (v1.0.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism VoiceOpen: ไฟล์โปรแกรมครบ (v1.0.0)"
+   },
+   {
+    "app": "code",
+    "en": "Prism Code: program files complete (v1.5.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Code: ไฟล์โปรแกรมครบ (v1.5.0)"
+   },
+   {
+    "app": "llearn",
+    "en": "Prism LLearn: program files complete (v1.1.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism LLearn: ไฟล์โปรแกรมครบ (v1.1.0)"
+   },
+   {
+    "app": "shot",
+    "en": "Prism Shot: program files complete (v1.0.0)",
+    "fix": null,
+    "level": "ok",
+    "th": "Prism Shot: ไฟล์โปรแกรมครบ (v1.0.0)"
+   },
+   {
+    "app": "shot",
+    "en": "Prism Shot: no Desktop shortcut yet",
+    "fix": "shortcut:shot",
+    "level": "warn",
+    "th": "Prism Shot: ยังไม่มี shortcut บน Desktop"
+   }
+  ],
+  "warn": 9
+ },
+ "rel": {
+  "size": {
+   "at": 1795625475,
+   "current": "1.1.0",
+   "hasUpdate": false,
+   "key": "size",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-Size-1.1.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-Size-1.1.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism Size 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism Size 1.1.0",
+    "pre": false,
+    "tag": "v1.1.0",
+    "url": "",
+    "version": "1.1.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-Size-1.1.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-Size-1.1.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism Size 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism Size 1.1.0",
+     "pre": false,
+     "tag": "v1.1.0",
+     "url": "",
+     "version": "1.1.0"
+    }
+   ],
+   "stale": false
+  },
+  "cam": {
+   "at": 1795625475,
+   "current": "1.3.0",
+   "hasUpdate": false,
+   "key": "cam",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-Cam-1.3.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-Cam-1.3.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism Cam 1.3.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism Cam 1.3.0",
+    "pre": false,
+    "tag": "v1.3.0",
+    "url": "",
+    "version": "1.3.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-Cam-1.3.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-Cam-1.3.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism Cam 1.3.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism Cam 1.3.0",
+     "pre": false,
+     "tag": "v1.3.0",
+     "url": "",
+     "version": "1.3.0"
+    }
+   ],
+   "stale": false
+  },
+  "rec": {
+   "at": 1795625475,
+   "current": "1.0.0",
+   "hasUpdate": true,
+   "key": "rec",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-Rec-1.1.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-Rec-1.1.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism Rec 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism Rec 1.1.0",
+    "pre": false,
+    "tag": "v1.1.0",
+    "url": "",
+    "version": "1.1.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-Rec-1.1.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-Rec-1.1.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism Rec 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism Rec 1.1.0",
+     "pre": false,
+     "tag": "v1.1.0",
+     "url": "",
+     "version": "1.1.0"
+    }
+   ],
+   "stale": false
+  },
+  "voiceopen": {
+   "at": 1795625475,
+   "current": "1.1.0",
+   "hasUpdate": false,
+   "key": "voiceopen",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-VoiceOpen-1.1.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-VoiceOpen-1.1.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism VoiceOpen 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism VoiceOpen 1.1.0",
+    "pre": false,
+    "tag": "v1.1.0",
+    "url": "",
+    "version": "1.1.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-VoiceOpen-1.1.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-VoiceOpen-1.1.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism VoiceOpen 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism VoiceOpen 1.1.0",
+     "pre": false,
+     "tag": "v1.1.0",
+     "url": "",
+     "version": "1.1.0"
+    }
+   ],
+   "stale": false
+  },
+  "code": {
+   "at": 1795625475,
+   "current": "1.5.0",
+   "hasUpdate": true,
+   "key": "code",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-Code-1.6.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-Code-1.6.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism Code 1.6.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism Code 1.6.0",
+    "pre": false,
+    "tag": "v1.6.0",
+    "url": "",
+    "version": "1.6.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-Code-1.6.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-Code-1.6.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism Code 1.6.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism Code 1.6.0",
+     "pre": false,
+     "tag": "v1.6.0",
+     "url": "",
+     "version": "1.6.0"
+    }
+   ],
+   "stale": false
+  },
+  "llearn": {
+   "at": 1795625475,
+   "current": "1.1.0",
+   "hasUpdate": false,
+   "key": "llearn",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-LLearn-1.1.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-LLearn-1.1.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism LLearn 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism LLearn 1.1.0",
+    "pre": false,
+    "tag": "v1.1.0",
+    "url": "",
+    "version": "1.1.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-LLearn-1.1.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-LLearn-1.1.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism LLearn 1.1.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism LLearn 1.1.0",
+     "pre": false,
+     "tag": "v1.1.0",
+     "url": "",
+     "version": "1.1.0"
+    }
+   ],
+   "stale": false
+  },
+  "shot": {
+   "at": 1795625475,
+   "current": "1.0.0",
+   "hasUpdate": false,
+   "key": "shot",
+   "latest": {
+    "assets": [
+     {
+      "downloads": 12,
+      "name": "Prism-Shot-1.0.0-Setup.exe",
+      "size": 18000000,
+      "url": ""
+     },
+     {
+      "downloads": 7,
+      "name": "Prism-Shot-1.0.0-Portable.zip",
+      "size": 19000000,
+      "url": ""
+     }
+    ],
+    "body": "## Prism Shot 1.0.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+    "date": "2026-11-24T10:00:00Z",
+    "name": "Prism Shot 1.0.0",
+    "pre": false,
+    "tag": "v1.0.0",
+    "url": "",
+    "version": "1.0.0"
+   },
+   "ok": true,
+   "reason": "",
+   "releases": [
+    {
+     "assets": [
+      {
+       "downloads": 12,
+       "name": "Prism-Shot-1.0.0-Setup.exe",
+       "size": 18000000,
+       "url": ""
+      },
+      {
+       "downloads": 7,
+       "name": "Prism-Shot-1.0.0-Portable.zip",
+       "size": 19000000,
+       "url": ""
+      }
+     ],
+     "body": "## Prism Shot 1.0.0\n\n### ภาษาไทย\n- ปรับให้เร็วขึ้นและเสถียรขึ้น\n- แก้ปัญหาเล็กๆ ที่ผู้ใช้แจ้งมา\n\n---\n\n### English\n- Faster and more stable\n- Small fixes from user reports",
+     "date": "2026-11-24T10:00:00Z",
+     "name": "Prism Shot 1.0.0",
+     "pre": false,
+     "tag": "v1.0.0",
+     "url": "",
+     "version": "1.0.0"
+    }
+   ],
+   "stale": false
+  }
+ },
+ "disk": {
+  "size": {
+   "cache": 63000000.0,
+   "data": 36000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "size",
+   "models": 0,
+   "program": 320000000,
+   "programDir": "C:\\Program Files\\Prism Size",
+   "total": 356000000
+  },
+  "cam": {
+   "cache": 41000000.0,
+   "data": 85000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "cam",
+   "models": 60000000,
+   "program": 210000000,
+   "programDir": "C:\\Program Files\\Prism Cam",
+   "total": 355000000
+  },
+  "player": {
+   "cache": 79000000.0,
+   "data": 220000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "player",
+   "models": 0,
+   "program": 140000000,
+   "programDir": "D:\\Apps\\Prism Player",
+   "total": 360000000
+  },
+  "studio": {
+   "cache": 0,
+   "data": 0,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": false,
+   "key": "studio",
+   "models": 0,
+   "program": 0,
+   "programDir": "",
+   "total": 0
+  },
+  "rec": {
+   "cache": 22000000.0,
+   "data": 164000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "rec",
+   "models": 0,
+   "program": 160000000,
+   "programDir": "D:\\Apps\\Prism Rec",
+   "total": 324000000
+  },
+  "voiceopen": {
+   "cache": 47000000.0,
+   "data": 19000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "voiceopen",
+   "models": 840000000,
+   "program": 120000000,
+   "programDir": "D:\\Apps\\Prism VoiceOpen",
+   "total": 979000000
+  },
+  "code": {
+   "cache": 4000000.0,
+   "data": 222000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "code",
+   "models": 0,
+   "program": 95000000,
+   "programDir": "C:\\Program Files\\Prism Code",
+   "total": 317000000
+  },
+  "llearn": {
+   "cache": 1000000.0,
+   "data": 296000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "llearn",
+   "models": 2490000000,
+   "program": 650000000,
+   "programDir": "D:\\Apps\\Prism LLearn",
+   "total": 3436000000
+  },
+  "shot": {
+   "cache": 9000000.0,
+   "data": 40000000,
+   "dataDirs": [],
+   "driveFree": 182000000000.0,
+   "driveTotal": 476000000000.0,
+   "installed": true,
+   "key": "shot",
+   "models": 30000000,
+   "program": 180000000,
+   "programDir": "D:\\Apps\\Prism Shot",
+   "total": 250000000
+  }
+ }
+}

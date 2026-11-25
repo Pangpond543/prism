@@ -1,5 +1,15 @@
 # Prism Web — changelog
 
+## 2026-11-26 — guide pages for Prism LLearn, Prism Shot, Prism Hub (9 apps)
+- New pages `llearn.html`, `shot.html`, `hub.html` (+ catalog entries, logos from `tools/brand/logos.js` tileSvg, home
+  orbit rings for 9 apps, "9 โปรแกรม" text). VoiceOpen, LLearn and Hub now have `repo` (published to GitHub the same day).
+- Capture jobs `hub`, `llearn`, `shot`, `shotcard` with made-up demo bridges: Hub data built from the SHAPE of a sandbox
+  recording (`make-hub-demo.py`, asserts no real path), LLearn demo lesson on a gradient video (`demo/llearn-demo.mp4`),
+  Shot pictures drawn as SVG and served by a tiny local server (a redirect to `data:` is refused for images).
+- `tools/capture/cdp-eval.js`: read a running Tauri app's replies through WebView2's DevTools port to learn their shape
+  (never publish what it returns — the Shot test copy returned the user's real capture history).
+- Checked: every guide spot + demo step has a box in all 4 variants; all pages open by file:// with no errors.
+
 ## 2026-11-23 — credit Claude AI · published
 - Wording no longer says the user designed/built the apps alone: hero ("ที่ผมสร้างโดยใช้ Claude AI" / "I made using Claude AI"),
   eyebrow + meta description ("สร้างด้วย Claude AI"), footer on every page ("Thanakorn · สร้างด้วย Claude AI").

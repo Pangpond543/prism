@@ -21,3 +21,7 @@
 - Python `http.server` lets the browser cache ES modules (old code after reload) → preview with `tools/serve.js`.
 - `container-type` on the stage makes it the containing block for `position: fixed` children → the explain box lives
   outside the stage (`.stage-wrap`).
+- **Recording replies from a real app shows real data**: Prism Shot's history lives in Pictures (not virtualised), so a
+  test copy returned the user's real captures. Record shapes only, delete the recording, write demo data by hand.
+- Image redirects in a capture job: `redirectURL` to a `data:` URL fails for images → serve them from a local http
+  server started in the job file (`jobs/shot.js`).

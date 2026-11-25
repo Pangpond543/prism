@@ -36,7 +36,7 @@ const APPS = [
     best: ['อัดผ่านการ์ดจอ · แถบไม่ติดในคลิป · บันทึกย้อนหลัง', 'GPU recording · bar never in the video · replay buffer'],
   },
   {
-    id: 'voiceopen', name: 'Prism VoiceOpen', logos: ['voiceopen'], c: ['#A44E0C', '#F2922A', '#FFD38E', '#FF8FA8'],
+    id: 'voiceopen', name: 'Prism VoiceOpen', logos: ['voiceopen'], repo: 'prism-voiceopen', c: ['#A44E0C', '#F2922A', '#FFD38E', '#FF8FA8'],
     tag: ['กดคีย์แล้วพูด เปิดโปรแกรม เว็บ หรือสั่งคอมได้เลย', 'Hold a key, say a word — open apps, sites or control your PC'],
     long: ['กด Ctrl+Space แล้วพูด "เปิดยูทูป" ขอบจอจะเรืองแสงตามเสียง แล้วสิ่งที่ตั้งไว้ก็ทำงาน ฟังเสียงแบบออฟไลน์ 100% (whisper.cpp) เข้าใจภาษาไทยแม้พูดไม่เป๊ะ สอนคำด้วยเสียงตัวเองได้ และสร้างคำสั่งเองได้ไม่จำกัด',
       'Press Ctrl+Space and say "open YouTube": the screen edge glows with your voice and the command runs. Speech is recognised 100 % offline (whisper.cpp), forgiving with Thai, can learn your own voice, and you can build unlimited commands.'],
@@ -50,6 +50,30 @@ const APPS = [
       'Write Python in a VS Code-style editor, press F6 and watch each line run: values float from variable to variable, function calls slide in as cards, files fill line by line. Errors are explained in Thai, answers are checked with hidden tests, and exam-style problems never run out. Fully offline.'],
     stack: ['Tauri 2', 'Pyodide', 'CodeMirror'],
     best: ['ดูค่าวิ่งกับตา · อธิบาย error ภาษาไทย · ตรวจคำตอบอัตโนมัติ', 'See values move · errors explained · auto-checked answers'],
+  },
+  {
+    id: 'llearn', name: 'Prism LLearn', logos: ['llearn'], repo: 'prism-llearn', c: ['#8A5600', '#E9A515', '#FFE08A', '#B4EE7E'],
+    tag: ['เรียนอังกฤษ / จีน จากคลิปและเว็บที่ชอบ พร้อมคำแปลไทยทุกบรรทัด', 'Learn English / Chinese from the clips and pages you like, with Thai under every line'],
+    long: ['วางลิงก์ YouTube, Bilibili, TikTok หรือเว็บบทความ แล้วได้บทเรียนพร้อมซับและคำแปลไทยทุกบรรทัด คลิกคำไหนก็ดูความหมายได้ เก็บเป็นบัตรคำแล้วทบทวนแบบ FSRS คลิปไม่มีซับ AI ในเครื่องเขียนให้ ฝึกฟังแล้วพิมพ์ได้ และมีตารางการเรียนทั้งปี ฟรีและทำงานในเครื่องทั้งหมด',
+      'Paste a YouTube, Bilibili, TikTok or article link and get a lesson with subtitles and Thai under every line. Click any word for its meaning, keep it as a card and review with FSRS. No subtitles? AI on your PC writes them. Listen-and-type practice and a year heatmap — free and fully offline.'],
+    stack: ['Tauri 2', 'Rust', 'llama.cpp', 'whisper.cpp'],
+    best: ['แปลไทยด้วย AI ในเครื่อง · AI ทำซับ · บัตรคำ FSRS', 'Offline AI Thai translation · AI subtitles · FSRS cards'],
+  },
+  {
+    id: 'shot', name: 'Prism Shot', logos: ['shot'], c: ['#0B5C8A', '#1E9FE0', '#9EDCFF', '#B9F3A6'],
+    tag: ['แคปหน้าจอ อ่านตัวหนังสือในภาพ แล้วแปลเป็นไทยทันที', 'Capture the screen, read the text in it and translate it at once'],
+    long: ['กดคีย์เดียว ลากครอบส่วนไหนของจอก็ได้ แล้วคัดลอก บันทึก ปักไว้บนจอ อ่านข้อความไทย/อังกฤษ/จีนในภาพ แปลเป็นการ์ด แปลทับบนภาพเดิม หรือแค่ชี้เมาส์ก็แปลให้ มีตัวแก้ไขภาพ เบลอข้อมูลส่วนตัวอัตโนมัติ ภาพยาวทั้งหน้าเว็บ และ QR ทำงานในเครื่องทั้งหมด',
+      'One key, drag over any part of the screen, then copy, save or pin it. Read Thai / English / Chinese text in it, translate it as a card, on the picture itself, or just by pointing. Plus an editor, automatic private-info blur, scrolling capture and QR — all offline.'],
+    stack: ['Tauri 2', 'Rust', 'PP-OCRv5', 'llama.cpp'],
+    best: ['อ่านข้อความในภาพออฟไลน์ · แปลตามเมาส์ · แปลบนภาพ', 'Offline OCR · hover translate · translate on the picture'],
+  },
+  {
+    id: 'hub', name: 'Prism Hub', logos: ['hub'], repo: 'prism-hub', c: ['#2F3A56', '#6B7BA6', '#C3CCE6', '#8FE3FF'],
+    tag: ['บ้านของทุกแอป Prism — เปิด ติดตั้ง อัปเดต ดูแล ในที่เดียว', 'Home of every Prism app — open, install, update and care for them in one place'],
+    long: ['เห็นทุกแอปในชุด Prism ในหน้าเดียว ติดตั้งแอปที่ยังไม่มี อัปเดตทั้งชุดในคลิกเดียว ซ่อมไฟล์ที่หาย ดูพื้นที่ดิสก์ สถิติการใช้ ตรวจสุขภาพเครื่อง ตั้งเปิดพร้อม Windows สำรองการตั้งค่าเป็นไฟล์เดียว และค้นหาด่วนเปิดแอปได้จากทุกที่',
+      'See every Prism app on one page: install the ones you don’t have, update the whole suite in one click, repair missing files, check disk use and usage stats, run a health check, choose what starts with Windows, back up settings to one file, and open anything from a quick launcher.'],
+    stack: ['Tauri 2', 'Rust'],
+    best: ['อัปเดตทั้งชุดคลิกเดียว · ตรวจสุขภาพ · ค้นหาด่วน', 'One-click suite updates · health check · quick launcher'],
   },
 ];
 

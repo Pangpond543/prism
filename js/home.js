@@ -30,7 +30,7 @@ onLang(() => {
    Prism Player + Prism Studio share one ring and circle each other — they are used together.
    Pointer → gentle parallax (outer rings drift more). Hover a planet → everything slows, its ring lights up. */
 const orbit = document.getElementById('orbit');
-const RINGS = { size: .15, cam: .212, media: .29, rec: .36, voiceopen: .408, code: .455 }; // radius ÷ orbit width
+const RINGS = { size: .14, cam: .185, media: .238, rec: .29, voiceopen: .325, code: .36, llearn: .395, shot: .428, hub: .46 }; // radius ÷ orbit width
 const PAIR = .046;                                                                     // Player ⇄ Studio distance from their centre
 const mk = (cls, css = {}) => {
   const e = document.createElement('div'); e.className = cls;

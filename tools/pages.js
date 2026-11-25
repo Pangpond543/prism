@@ -8,6 +8,9 @@ const apps = [
   ['rec', 'Prism Rec', 'อัดหน้าจอด้วยแถบแก้วลอย — คู่มือแบบชี้แล้วรู้'],
   ['voiceopen', 'Prism VoiceOpen', 'พูดแล้วเปิดโปรแกรม — คู่มือแบบชี้แล้วรู้'],
   ['code', 'Prism Code', 'เรียน Python โดยดูโค้ดวิ่ง — คู่มือแบบชี้แล้วรู้ + ดาวน์โหลด'],
+  ['llearn', 'Prism LLearn', 'เรียนอังกฤษ / จีน จากคลิปและเว็บ พร้อมคำแปลไทย — คู่มือแบบชี้แล้วรู้ + ดาวน์โหลด'],
+  ['shot', 'Prism Shot', 'แคปหน้าจอ อ่านและแปลข้อความในภาพ — คู่มือแบบชี้แล้วรู้'],
+  ['hub', 'Prism Hub', 'บ้านของทุกแอป Prism — คู่มือแบบชี้แล้วรู้ + ดาวน์โหลด'],
 ];
 // Plain (non-module) scripts, in order — so the pages also work when opened by double-click (file://),
 // where browsers refuse ES modules. index.html carries the same list (shots = cam, page = js/home.js).
