@@ -159,6 +159,7 @@
   ],
 
   feats: [
+    { i: '📱', t: ['มีแอป Android ด้วย', 'Also on Android'], d: ['Prism Cam บนมือถือ/แท็บเล็ต: เลเยอร์ ติดหน้า/ติดมือ ระบายหน้า VTuber ท่ามือสั่งงาน แอนิเมชัน ถ่ายรูปและวิดีโอ — โหลด .apk ได้จากปุ่มด้านบน', 'Prism Cam for phones and tablets: layers, face/hand stickers, face paint, VTuber, gesture commands, animation, photos and video — get the .apk from the button above.'] },
     { i: '📷', t: ['กล้องเสมือนของจริง', 'A real virtual camera'], d: ['ใช้กลไกของ Windows 11 เอง ไม่ต้องลงไดรเวอร์ เลือกได้ในทุกโปรแกรมที่ใช้กล้อง', 'Built on Windows 11 itself — no driver to install, works in every app that uses a camera.'] },
     { i: '🧠', t: ['AI ในเครื่อง', 'On-device AI'], d: ['ลบ/เบลอพื้นหลัง จับมือ จับใบหน้า ทำงานบนการ์ดจอในเครื่อง ไม่ส่งภาพขึ้นเน็ต', 'Background removal, hand and face tracking run on your GPU — your picture never leaves the PC.'] },
     { i: '✋', t: ['ท่ามือ = ปุ่ม', 'Hand poses as buttons'], d: ['สลับซีน เล่นแอนิเมชัน หรือกดคีย์ลัดด้วยท่ามือ สอนท่าของตัวเองได้', 'Switch scenes, play animations or press shortcuts with a pose — and teach your own.'] },
@@ -188,6 +189,7 @@
   ],
 
   faq: [
+    { q: ['ใช้บนมือถือได้ไหม?', 'Does it work on a phone?'], a: ['ได้ มีแอป Prism Cam สำหรับ Android (มือถือและแท็บเล็ต) แยกต่างหาก กดปุ่ม "แอป Android (APK)" ด้านบนจากในมือถือ แล้วกดไฟล์ที่โหลดมาเพื่อติดตั้ง', 'Yes — there is a separate Prism Cam app for Android phones and tablets. Tap "Android app (APK)" above on your phone, then tap the downloaded file to install.'] },
     { q: ['ต้องใช้ Windows รุ่นไหน?', 'Which Windows do I need?'], a: ['กล้องเสมือนต้องใช้ Windows 11 (ใช้ระบบกล้องเสมือนที่มากับ Windows) ส่วนสตูดิโอ ถ่ายภาพ และอัดวิดีโอใช้ได้ปกติ', 'The virtual camera needs Windows 11 (it uses the virtual camera built into Windows). The studio, snapshots and recording work as usual.'] },
     { q: ['Discord ไม่เห็นกล้อง Prism Cam', 'Discord does not list Prism Cam'], a: ['กด "เริ่มกล้องเสมือน" ใน Prism Cam ก่อน แล้วปิด-เปิด Discord ใหม่ (Discord อ่านรายชื่อกล้องตอนเปิดโปรแกรม)', 'Start the virtual camera in Prism Cam first, then restart Discord (it reads the camera list when it opens).'] },
     { q: ['ภาพกล้องของฉันถูกส่งไปที่ไหนไหม?', 'Is my camera sent anywhere?'], a: ['ไม่ AI ทุกตัวทำงานในเครื่อง ไม่มีบัญชี ไม่มีการเก็บข้อมูล ภาพไปถึงเฉพาะโปรแกรมที่คุณเลือกกล้อง Prism Cam เท่านั้น', 'No. All AI runs on your PC, there is no account and no data collection. The picture only reaches apps where you pick the Prism Cam camera.'] },

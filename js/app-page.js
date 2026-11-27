@@ -20,6 +20,8 @@ const S = {
   keysH: ['คีย์ลัด', 'Keyboard shortcuts'],
   faqH: ['คำถามที่พบบ่อย', 'Questions people ask'],
   dl: ['ดาวน์โหลด', 'Download'], setup: ['ตัวติดตั้ง', 'Installer'], portable: ['แบบพกพา', 'Portable'],
+  android: ['แอป Android (APK)', 'Android app (APK)'],
+  androidP: ['มือถือ/แท็บเล็ต: โหลดไฟล์ .apk ในมือถือ แล้วกดติดตั้ง (ครั้งแรกให้อนุญาต "ติดตั้งจากแหล่งที่ไม่รู้จัก") อัปเดตเองได้จากปุ่ม … → ข้อมูล', 'Phone / tablet: download the .apk on the phone and tap it to install (allow "install unknown apps" the first time). It updates itself from … → Info.'],
   soon: ['กำลังเตรียมปล่อยให้โหลด', 'Download coming soon'],
   soonP: ['ตอนนี้ยังไม่ได้อัปขึ้น GitHub — ระหว่างนี้ลองเรียนวิธีใช้จากคู่มือด้านล่างได้เลย', 'Not on GitHub yet — meanwhile you can already learn it with the guide below.'],
   ver: ['เวอร์ชันล่าสุด', 'Latest'], free: ['ฟรี · Windows 10/11 · ไม่ต้องสมัครบัญชี', 'Free · Windows 10/11 · no account'],
@@ -69,6 +71,12 @@ async function drawDownload() {
     <div class="row">${r.setup ? `<a class="btn primary" href="${r.setup.url}">${I.down}${t(S.setup)} <small>${mb(r.setup.size)}</small></a>` : `<a class="btn primary" href="${r.page}" target="_blank" rel="noopener">${I.down}${t(S.dl)}</a>`}
       ${r.portable ? `<a class="btn" href="${r.portable.url}">${t(S.portable)} <small>${mb(r.portable.size)}</small></a>` : ''}</div>
     <p class="note">${t(S.free)}<br>${t(S.smart)}</p>`;
+  if (app.android) {
+    const a = await release({ repo: app.android });
+    const url = a?.apk?.url || a?.page || `https://github.com/Pangpond543/${app.android}/releases/latest`;
+    el.insertAdjacentHTML('beforeend', `<div class="row"><a class="btn" href="${url}">${I.down}${t(S.android)}${a?.tag ? ` <small>${esc(a.tag)}${a.apk ? ' · ' + mb(a.apk.size) : ''}</small>` : ''}</a></div>
+      <p class="note">${t(S.androidP)}</p>`);
+  }
 }
 
 function drawText() {

@@ -34,3 +34,8 @@
 - Rec floating bar + VoiceOpen glow are re-drawn (`mock/`) instead of captured: the real ones refract the user's screen.
 - Ctrl+K search with Thai fuzzy matching (Thai has no spaces between words).
 - Phones: explain box below the picture + zoom onto the spot (the full app is ~350 px wide there).
+
+## 2026-11-27 — Android download on the Prism Cam page, Prism Hub shortcut on Home
+- Cam page: second download button "Android app (APK)" reads the newest `prism-cam-android` release (`android:` field in `data/apps.js`, `apk` in `release()`), plus an Android feature card and FAQ.
+- Home install step 01: tip to install Prism Hub once and get every app from it.
+- Shot and Player/Studio stay without `repo` until the user makes `prism-shot` / `prism-media` public (they are private on GitHub now; a repo here would show a broken download).

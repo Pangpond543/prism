@@ -226,6 +226,7 @@ async function release(app) {
       tag: j.tag_name, date: j.published_at, page: j.html_url,
       setup: files.find((f) => /setup/i.test(f.name) && /\.exe$/i.test(f.name)),
       portable: files.find((f) => /portable/i.test(f.name)),
+      apk: files.find((f) => /\.apk$/i.test(f.name)),
     };
     try { sessionStorage.setItem(key, JSON.stringify({ at: Date.now(), v })); } catch { /* full */ }
     return v;

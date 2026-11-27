@@ -1,6 +1,7 @@
 (() => {
 // The Prism suite catalog — one entry per app page. Text is [Thai, English].
 // repo = GitHub repo with Releases (download button asks GitHub for the newest one); no repo = "coming soon".
+// android = repo whose newest release has the Android .apk (extra button on the page).
 // c = logo colours [deep, mid, light, accent] (same as Program_Size/tools/brand/logos.js).
 const APPS = [
   {
@@ -12,7 +13,7 @@ const APPS = [
     best: ['สแกนเร็วด้วย Rust · ลากย้ายไฟล์จากแผนที่ · ล้างขยะปลอดภัย', 'Fast Rust scanner · drag files on the map · safe cleaning'],
   },
   {
-    id: 'cam', name: 'Prism Cam', logos: ['cam'], repo: 'prism-cam', c: ['#0B6F73', '#1FB5A6', '#86E8D6', '#6CC7FF'],
+    id: 'cam', name: 'Prism Cam', logos: ['cam'], repo: 'prism-cam', android: 'prism-cam-android', c: ['#0B6F73', '#1FB5A6', '#86E8D6', '#6CC7FF'],
     tag: ['สตูดิโอกล้องแก้ว ส่งภาพเป็นกล้องเสมือนให้ Discord / Zoom / OBS', 'A glass camera studio that becomes a virtual camera for Discord, Zoom and OBS'],
     long: ['จัดกล้อง จับหน้าจอ รูป วิดีโอ ข้อความ สติกเกอร์ ลงบนฉากเดียว ใส่ AI ลบพื้นหลัง ติดสติกเกอร์ตามหน้า สั่งงานด้วยท่ามือ ทำแอนิเมชันได้ แล้วส่งภาพออกเป็นกล้องชื่อ "Prism Cam" ที่โปรแกรมไหนก็เลือกใช้ได้',
       'Put cameras, screen capture, pictures, videos, text and stickers on one stage. Add AI background removal, face stickers, hand-gesture commands and animation, then send it all out as a camera called "Prism Cam" that any app can pick.'],
